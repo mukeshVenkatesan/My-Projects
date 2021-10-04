@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>Muki's Portfolio</title>
+	<link rel="stylesheet" href="portfolio.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+</head>
+<body>
+    <!-- <div> class is used to divide the webpage elements in to sections like top section,middleetc. -->
+        <!-- here hero class is used to refer top section any classs name can be given -->
+    <div class="hero">
+        <div class="nav">
+         <!-- <ul>unordered list means list has no numbering but bulletins and in ordered list numbering should be given -->
+            <!-- Here,logo is defined as class=logo,it can be defined with any name -->
+            <h2 class="logo">Muki's <span id="port">Port</span><span id="folio">folio</span></h2>
+
+         <ul>
+            <!-- <li> tag is used to mention the elements of the list -->
+                <!-- a tag is used to make the list elemnts as link -->
+            <li><a href="#"><h3 id="home">Home</h3></a></li>
+            <li><a href="#"><h3 id="About">About</h3></a></li>
+            <li><a href="#"><h3 id="Skills">Skills</h3></a></li>
+            <li><a href="#"><h3 id="Contact">Contact</h3></a></li>
+            <!-- Here,button is defined as class=button,it can be defined with any name -->
+         </ul>
+         <a href="#" class="button">Join me</a>
+        </div>
+        <div class="content">
+            <h4>Hello,I am</h4>
+            <h1> Mukesh <span>V</span></h1>
+            <h3 id="web">I am a <span id="w2">Web </span>developer</h3>
+         <div class="newsletter">
+
+            <!-- <form> tag is used to create the input items in a webpage like name,email -->
+         <form>
+            <!-- In THe below line anything written in placeholder will be shown in web page -->
+            <!-- The iinput tag has no closing tag like </input> -->
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <input type="submit" name="submit" value="Submit">
+         </form>
+        </div>
+        </div>
+    </div>
+    <div class="wrapper">
+		<div class="toggle_button">
+			<ul>
+				<li>
+					<a class="share_btn">
+						<span class="text">SHARE</span>
+						<span class="icon"><i class="fas fa-plus"></i></span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="sm facebook">
+						<span class="icon">
+							<i class="fab fa-facebook-f"></i>
+						</span>
+						<span class="text">Facebook</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="sm twitter">
+						<span class="icon">
+							<i class="fab fa-twitter"></i>
+						</span>
+						<span class="text">Twitter</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="sm instagram">
+						<span class="icon">
+							<i class="fab fa-instagram"></i>
+						</span>
+						<span class="text">Intagram</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="sm reddit">
+						<span class="icon">
+							<i class="fab fa-reddit-alien"></i>
+						</span>
+						<span class="text">Reddit</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+<script>
+	var share_btn = document.querySelector(".share_btn");
+	var toggle_button = document.querySelector(".toggle_button");
+
+	share_btn.addEventListener("click", function(){
+		toggle_button.classList.toggle("active");
+	})
+</script>
+
+</body>
+</html>

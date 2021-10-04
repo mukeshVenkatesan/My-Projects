@@ -1,0 +1,268 @@
+/* hERE* IS USED TO CALL THE ENTIRE ELEMENTS IN THE WEBPAGE */
+*{
+    padding: 0;
+    margin: 0;
+    /* Box-sizing is used to apply changes within a box if dimensions are given,otherwise some factors may change the dimensions of the box(frame)*/
+    box-sizing: border-box;
+}
+/* Here,Hero claass is used for styling that is top section of webpage */
+.hero{
+    /* Here,100%-used to menion the spacce occupied the text in that class ,but vh(visible height) is used to make it for total page*/
+    width: 100%;
+    height: 100vh;
+    background-image: url(./pexels-kaboompics-com-5836.jpg);
+    /* bACKGround size cover is used to auto adjust image regarding to web page */
+    background-size:cover;
+    background-position:center
+}
+.logo{
+    height: 100px;
+    padding: 30px ;
+    color:  black;
+    font-size: 45px;
+    letter-spacing:7px;
+    font-family: Garamond ;
+    /* The below cursor command is used to make the cursor like pointer when reaching logo section */
+   cursor: pointer;
+}
+#port{
+    color: black;
+}
+#folio{
+    color: white;
+
+}
+.nav{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-top: 20px;
+    /* In % it will be constant irrespective of web page size*/
+    padding-left: 3%;
+    padding-right: 2%;
+}
+.button{
+    color: black;
+    background-color:white;
+    border-radius: 9px;
+    border: 1px solid whitesmoke; 
+    padding: 2px;
+
+    /* When the cursor hovers the transition time is given .4s */
+    transition: transform .4s;
+    text-decoration: none;
+    text-decoration:none;
+    font-style:normal;
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+.button:hover{
+    /* The below line says when cursor hovers the button,it shoulbe be bigged in size */
+    transform: scale(1.2);
+
+}
+/* the below line is used to display list elemnts in a row(left to right) */
+ul li{
+    display:inline-block;
+    padding: 10px 35px;
+}
+/* TO define a link it should bedefined as below */
+ul li a{
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: Brush Script MT (cursive);
+
+    color:whitesmoke;
+    /* the below tag is used to remove underline in the text */
+    text-decoration:none;
+    font-style:normal;
+    font-size: 25px;
+
+
+}
+ul li a:hover{color:black;}
+
+ .content{
+    /* The below tag is used to move the content to anywhere in the page without relation*/
+    position:absolute;
+    top:50%;
+    left: 5%;
+}
+span{color:#045762;
+}
+h1{color:black;
+    margin: 20px 0 20px;
+    letter-spacing:2px;
+
+
+font-size: 40px
+;
+}
+#web{
+    color:black;
+font-size: 35px;
+
+}
+#w2{
+    color:045762;
+}
+.content{margin-left: 0.5%;
+margin-top: 0.00001%;}
+.newsletter form{
+    width: 400px;
+    max-width:100% ;
+    position:relative;
+    padding:5px;
+
+
+}
+.newsletter form input:first-child{
+    width: 100%;
+    display: inline-block;
+    padding:10px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 2px solid #4E8D7C;
+    border-radius: 15px;
+}
+.newsletter form input:last-child{
+    position:absolute;
+    display: inline-block;
+    padding: 7px;
+    background-color:yellow;
+    color:black;
+    font-weight: bold; 
+    border-color:black;
+    border-radius: 13px;
+    top: 15.5px;
+    right: 8px;
+}
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'PT Sans', sans-serif;
+}
+
+
+
+.wrapper{
+	position: absolute;
+	top: 70%;
+	left: 90%;
+	transform: translate(-50%,-50%);
+}
+
+.toggle_button{
+	width: 250px;
+	height: 65px;
+	background: #fff;
+	border-radius: 50px;
+	overflow: hidden;
+	transition: all 0.2s ease;
+}
+
+.toggle_button ul li a{
+	display: flex;
+	align-items: center;
+	height: 65px;
+	padding: 5px 12px;
+}
+
+.toggle_button ul li a.share_btn{
+	justify-content: center;
+	cursor: pointer;
+}
+
+.toggle_button ul li a.share_btn .text{
+	font-weight: 700;
+	font-size: 24px;
+    letter-spacing: 10px;
+    color: yellow#c73a5d;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.toggle_button ul li a.share_btn .icon{
+	width: 35px;
+	height: 35px;
+	background: #c73a5d;
+	display: inline-block;
+	border-radius: 50%;
+	position: relative;
+	transition: all 1s ease;
+}
+
+.toggle_button ul li a .icon i{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+}
+
+.toggle_button ul li a.sm .icon{
+	position: relative;
+	width: 35px;
+	height: 35px;
+	background: red;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+
+.toggle_button ul li a .text{
+	letter-spacing: 2px;
+}
+
+.toggle_button ul li a.facebook .icon{
+	background: #3b5998;
+}
+
+.toggle_button ul li a.facebook .text{
+	color: #3b5998;
+}
+
+.toggle_button ul li a.twitter .icon{
+	background: #1da1f2;
+}
+
+.toggle_button ul li a.twitter .text{
+	color: #1da1f2;
+}
+
+.toggle_button ul li a.instagram .icon{
+	background: #c32aa3;
+}
+
+.toggle_button ul li a.instagram .text{
+	color: #c32aa3;
+}
+
+.toggle_button ul li a.reddit .icon{
+	background: #ff4500;
+}
+
+.toggle_button ul li a.reddit .text{
+	color: #ff4500;
+}
+
+.toggle_button.active{
+	height: 325px;
+}
+
+.toggle_button.active ul li a.share_btn .icon{
+	transform: rotate(45deg);
+}
+
+.toggle_button ul li a.sm{
+	visibility: hidden;
+}
+
+.toggle_button.active ul li a.sm {
+    visibility: visible;
+    transition-delay: 0.3s;
+}
